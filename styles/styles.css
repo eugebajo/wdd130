@@ -10,7 +10,7 @@
     box-sizing: border-box;
 }
 
-header, .grid, footer {
+header .grid footer {
     max-width:840x;
     margin: 0 auto;
 }
