@@ -41,7 +41,8 @@ h1 {
     color: steelblue;
     font-family: var(--heading-font);
     font-style: normal;
-    font-weight: 700;
+    font-weight: 300;
+    font-size: 26px;
     border-bottom: 1px solid steelblue
 }
 
@@ -50,7 +51,7 @@ img {
     height: auto;
     border: 1px solid steelblue;
     padding: 2px;
-    box-shadow: 0 0 30px gray;
+    box-shadow: 0 0 13px gray;
 }
 
 p {
