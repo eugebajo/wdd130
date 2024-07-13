@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rock+Salt&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 :root {
     --primary-color: #22577a;
     --secondary-color: #028688;
@@ -15,16 +21,8 @@
     --nav-hover-background-color: #38a3a5;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
     font-family: var(--paragraph-font);
-    max-width: 960px;
-    display: block;
 }
 
 img {
@@ -43,6 +41,8 @@ header {
     grid-template-columns: 200px auto;
     align-items: center;
     background-color: var(--primary-color);
+    padding: 1rem;
+    justify-content: space-around;
 }
 
 h1,
@@ -52,7 +52,7 @@ h2 {
 }
 
 p {
-    padding: 25px;
+    padding: 10px;
 }
 
 
@@ -62,23 +62,22 @@ h1 article {
     position: absolute; 
 }
 
-/* default hero image styling */
 
+/* grid layout for all pages */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    align-items: center;
+}
+
+/* hero image styling */
 .hero {
     position: relative;
-    top: 20px;
-    left: 115px;
 }
 
 .hero>img {
     display: block;
     width: 100%;
-}
-
-div img {
-    display: block;
-    width: 100%;
-    height: auto;
 }
 
 footer {
@@ -106,7 +105,8 @@ nav a {
     display: flex;
     padding: 0.5rem;
     margin: -0.14rem;
-    font-family: var(--heading-font);
+    font-family: var(--paragraph-font);
+    font-weight: 300;
     color: #fff;
     text-decoration: none;
 }
@@ -138,23 +138,16 @@ nav a:hover {
 .abs-article img {
     float: right;
     margin: 2rem;
-    width: 20rem;
+    width: 25rem;
 }
 
 .abs-article p {
     font-family: var(--paragraph-font);
     color: #fff;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    text-shadow: -1.5px -1.5px 0 #000;
     font-size: 22px;
     text-align: center;
-}
-
-.adventures {
-    margin: 50px 0;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 1rem;
-    justify-items: center;
+    margin: 2rem;
 }
 
 
@@ -173,7 +166,102 @@ nav a:hover {
     background-color: unset;
 }
 
+.history-section {
+    margin: 50px 0;
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    /* This creates three columns */
+    gap: 20px;
+    /* This is the gap between columns */
+    align-items: center;
+    text-align: justify;
+}
 
+.history-img {
+    grid-column: 2 / 3;
+    grid-row: 2;
+    /* This places the image in the center column */
+}
 
+.history-section p:first-of-type {
+    grid-column: 1 / 2;
+    grid-row: 2;
+    /* This places the first paragraph in the left column */
+    padding: 0 20px;
+    /* Add padding for better text readability */
+}
 
+.history-section p:last-of-type {
+    grid-column: 3 / 4;
+    grid-row: 2;
+    /* This places the second paragraph in the right column */
+    padding: 0 20px;
+    /* Add padding for better text readability */
+}
 
+/* Ensure the h2 is full-width above the columns */
+.history-section>h2 {
+    grid-column: 1 / -1;
+    grid-row: 1;
+    /* This spans the h2 across all columns */
+    text-align: center;
+    /* Center the text of the h2 */
+    padding-bottom: 1rem;
+    /* Add some space below the h2 */
+}
+
+.adventures {
+    margin: 50px 0;
+    display: grid;
+    gap: 1rem;
+    justify-items: center;
+}
+
+.history h2, .adventures h2 {
+    grid-column: 1 / -1;
+    justify-self: center;
+    padding: 1em 0;
+}
+
+figure:nth-of-type(odd) {
+    background-color: var(--accent1-color);
+    color: var(--nav-link-color);
+    align-self: center;
+}
+
+figure:nth-of-type(even) {
+    background-color: var(--accent2-color);
+    color: var(--nav-link-color);
+    align-self: center;
+}
+
+figcaption {
+    text-align: center;
+    padding: 1em 0;
+}
+
+.history {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    gap: 2em;
+    margin: 50px 0;
+}
+
+/* Button styling */
+.button-box {
+    background-color: var(--button-color);
+    font-size: 1.25em;
+    color: var(--white);
+    border-radius: 20px;
+    padding: 1em;
+    justify-self: center;
+    align-self: center;
+    min-width: 10rem;
+    text-align: center;
+    letter-spacing: 1px;
+    box-shadow: 3px 3px 3px var(--primary-color);
+}
+
+.button-box:hover {
+    background-color: var(--button-color-hover);
+}
