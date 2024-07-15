@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rock+Salt&display=swap');
 
 :root {
-    --primary-color: #22577a;
+    --primary-color: #103b66;
     --secondary-color: #028688;
     --accent1-color: #70ac92;
     --accent2-color: #c7f9cc;
@@ -9,7 +9,7 @@
     --heading-font: "Rock Salt", cursive;
     --paragraph-font: "roboto", serif;
 
-    --nav-background-color: #22577a;
+    --nav-background-color: #103b66;
     --nav-link-color: #c7f9cc;
     --nav-hover-link-color: #57cc99;
     --nav-hover-background-color: #38a3a5;
