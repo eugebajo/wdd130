@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WDD 130 | HTML Form - User Poll</title>
+    <link rel="stylesheet" href="styles/quiz.css">
+</head>
+<body>
+<header>
+    <h1>WDD 130 | María Eugenia Báez Joubert | HTML Quiz</h1>
+</header>
+<main>
+    <form>
+        <fieldset>
+            <!--Form elements will go here -->
+            <div class="form-item column 2">
+                <label for="q1">1. Write what the acronym HTML mean</label>
+                <input type="text" id="q1" name="q1">
+            </div>
+            <label for="q2">2. What is the "alt" attribute in the "img" tag and why is it important?</label>
+            <textarea name="q2" id="q2" rows="4"></textarea>
+            <div class="form-item column 1">
+                <label for="q3">3. Where to put the header tag in html?</label>
+                <select name="q3" id="q3">
+                    <option value="">Choose One</option>
+                    <option value="Head">"Head" Tag</option>
+                    <option value="Body">"Body" Tag</option>
+                    <option value="Main">"Main" Tag</option>
+                    <option value="Aside">"Aside" Tag</option>
+                    <option value="Footer">"Footer" Tag</option>
+                </select>
+            </div>
+            <div class="form-item column 1">
+                <label for="q4">4. How many header elements are available in HTML</label>
+                <input type="number" id="q4" name="q4" min="6" max="6">
+            </div>
+        </fieldset>
+        <button type="submit">Submit Quiz</button>
+    </form>
+</main>
+<footer>
+    <p>&copy;2024 | HTML Form | Quiz Form | María Eugenia Báez</p>
+</footer>
+</body>
+</html>
