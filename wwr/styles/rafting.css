@@ -519,3 +519,221 @@ iframe {
     font-size: 15px;
     font-weight: 500;
 }
+
+.raft-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    align-items: center;
+}
+
+.hero-grid {
+    grid-column: 1/13;
+    position: relative;
+}
+
+.hero-jpg {
+    display: block;
+    width: 100%;
+    grid-row: 1/9;
+    grid-column: 1/13;
+}
+.Home-message1 {
+    position: absolute;
+    background-color: rgba(28, 28, 29, 0.568);
+    top: 300px;
+    width: 100%;
+    font-family: var(--heading-font);
+    text-align: center;
+    color: #fcf7de;
+    font-size: 60px;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.Home-message2 {
+    position: absolute;
+    top: 500px;
+    width: 100%;
+    font-family: var(--paragraph-font);
+    text-align: center;
+    color: #fcf7de;
+    font-size: 40px;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.card {
+    margin: 100px 0;
+    grid-row: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card p {
+    font-weight: 700;
+    font-size: medium;
+    box-shadow: 5px 5px 10px #6f7364;
+
+}
+
+.trips-photo1 {
+    grid-column: 2 / 4;
+    grid-row: 2;
+}
+
+.trips-photo2 {
+    grid-column: 6/8;
+    grid-row: 2;
+}
+
+.trips-photo3 {
+    grid-column: 10/12;
+    grid-row: 2;
+}
+
+.photo {
+    border: 10px solid #051a2e;
+    width: 100%;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #6f7364;
+    margin: 20px 0;
+}
+
+.hustle-content {
+    grid-column: 7/12;
+    grid-row: 5/7;
+    color: var(--white);
+    background-color: var(--secondary-color);
+    padding: 35px;
+    box-shadow: 5px 5px 10px #6f7364;
+    line-height: 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+
+.hustle-content-wrap {
+    display: grid;
+    justify-items: center;
+}
+
+.hustle-group-title {
+    text-align: center;
+    font-family: var(--paragraph-font);
+    color: #fff;
+    font-size: 35px;
+    line-height: 200%;
+    font-weight: 700;
+    font-style: bold;
+    
+}
+
+.hustle-title {
+    border-bottom: 1px solid #fff;
+    align-self: center;
+    margin-bottom: 70px;
+}
+
+.hustle-subtitle {
+    font-size: 50px;
+}
+
+.text1 {
+    text-align: center;
+    font-family: var(--paragraph-font);
+    color: #fff;
+    font-size: 35px;
+    line-height: 100%;
+    font-weight: 300;
+}
+
+.text2 {
+    text-align: center;
+    font-family: var(--paragraph-font);
+    color: #fff;
+    font-size: 25px;
+    line-height: 100%;
+    font-weight: 300;  
+    font-style: italic;
+}
+
+.river {
+    background-color: var(--secondary-color);
+    height: 700px;
+    grid-column: 1/13;
+    grid-row: 3/9;
+}
+
+.button-box {
+    background-color: var(--accent2-color);
+    font-size: 1.25em;
+    font-family: var(--paragraph-font);
+    color: #051a2e;
+    border-radius: 20px;
+    padding: 1em;
+    justify-self: center;
+    align-self: center;
+    min-width: 10rem;
+    text-align: center;
+    letter-spacing: 1px;
+    box-shadow: 3px 3px 3px var(--primary-color);
+}
+
+.button-box:hover {
+    background-color: var(--nav-hover-link-color);
+}
+
+.News {
+    grid-column: 4/9;
+    grid-row: 9/11;
+    justify-self: center;
+    justify-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 1em 0;
+}
+
+.news-form {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--accent1-color);
+    color: var(--white);
+    margin: 1em 0;
+    padding: 1em 0;
+}
+
+.News p {
+    justify-self: center;
+    font-size: 1.5em;
+    color: var(--black);
+    margin: 1em 0 0 0;
+}
+
+.news-form .Signup-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 10px;
+    margin: 1em;
+    align-items: center;
+}
+
+.news-form label {
+    grid-column: 1;
+    grid-row: 1;
+    text-align: right;
+    color: var(--white);
+    margin: 0;
+}
+
+.news-form input {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.news-form button {
+    background-color: var(--button-color);
+    padding: .5em 1em
+}
+
+.newsletter-form button:hover {
+    background-color: var(--button-color-hover);
+}
